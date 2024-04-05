@@ -6,7 +6,7 @@ import morgan from 'morgan'
 import { config } from "dotenv"
 
 //Importaciones de routes
-
+import userRoutes from '../src/user/user.routes.js'
 
 //configuraciones
 const app = express()
@@ -19,6 +19,7 @@ app.use(express.json())
 app.use(morgan('dev')) 
 
 //declaracion de rutas
+app.use('/user', userRoutes)
 
 //levantar el servidor 
 export const initServer = ()=>{
