@@ -69,3 +69,14 @@ export const checkUpdatePassword = async (data, id) => {
         return false
     }
 }
+
+export const checkUpdateCategory = async (data, id) => {
+    if (id) {
+        if (Object.entries(data).length === 0 ) {
+            return false
+        }
+        return true
+    } else {
+        return false
+    }
+}

@@ -1,3 +1,4 @@
+'use strict'
 import { Schema, model } from "mongoose";
 
 const userSchema = Schema({
@@ -35,7 +36,11 @@ const userSchema = Schema({
         uppercase: true,
         enum: ['ADMIN', 'CLIENT', 'ADMINHOTEL'],
         required: true
-    }
+    }, 
+    hotel: {
+        type: Schema.Types.ObjectId,
+        ref: 'hotel'
+    }, 
 
 },{
     versionKey: false

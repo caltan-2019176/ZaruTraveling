@@ -7,6 +7,7 @@ import { config } from "dotenv"
 
 //Importaciones de routes
 import userRoutes from '../src/user/user.routes.js'
+import categoryHotelRoutes from '../src/categoryHotel/categoryHotel.routes.js'
 
 //configuraciones
 const app = express()
@@ -20,6 +21,7 @@ app.use(morgan('dev'))
 
 //declaracion de rutas
 app.use('/user', userRoutes)
+app.use('/categoryHotel', categoryHotelRoutes)
 
 //levantar el servidor 
 export const initServer = ()=>{
