@@ -80,3 +80,16 @@ export const checkUpdateCategory = async (data, id) => {
         return false
     }
 }
+
+export const checkUpdateComment = async (data, id) => {
+    if (id) {
+        if (Object.entries(data).length === 0 ||
+            data.user||
+            data.hotel) {
+            return false
+        }
+        return true
+    } else {
+        return false
+    }
+}
