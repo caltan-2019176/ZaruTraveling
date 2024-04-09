@@ -4,13 +4,16 @@
 import express from 'express'
 import morgan from 'morgan'
 import { config } from "dotenv"
+
+//Importaciones de routes
+import userRoutes from '../src/user/user.routes.js'
+import categoryHotelRoutes from '../src/categoryHotel/categoryHotel.routes.js'
+import categoryRoomRoutes from '../src/categoryRoom/categoryRoom.routes.js'
+import commentRoutes from '../src/comment/comment.routes.js'
 import reservationRoutes from '../src/reservation/reservation.routes.js'
 import eventRoutes from '../src/event/event.routes.js'
 import invoiceRoutes from '../src/invoice/invoice.routes.js'
 import additionalsRoutes from '../src/additionals/additionals.routes.js'
-
-//Importaciones de routes
-
 
 //configuraciones
 const app = express()
@@ -23,11 +26,15 @@ app.use(express.json())
 app.use(morgan('dev')) 
 
 //declaracion de rutas
-
+app.use('/user', userRoutes)
+app.use('/categoryHotel', categoryHotelRoutes)
+app.use('/categoryRoom', categoryRoomRoutes)
+app.use('/comment', commentRoutes)
 app.use('/reservation', reservationRoutes)
 app.use('/invoice', invoiceRoutes)
 app.use('/event', eventRoutes)
 app.use('/additionals', additionalsRoutes)
+
 
 //levantar el servidor 
 export const initServer = ()=>{
