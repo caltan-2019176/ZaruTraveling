@@ -1,0 +1,229 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "HotelProject",
+    "dateExported": "2024-04-09T00:02:14.270Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "676f090f-eeda-4369-b275-12cb0f3c9fdf",
+            "name": "additionals",
+            "containerId": "",
+            "created": "2024-04-08T20:39:43.173Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "60bb3ec0-44e2-4b41-8412-b309ac92f3fd",
+            "name": "event",
+            "containerId": "",
+            "created": "2024-04-08T22:33:53.874Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "69e45b24-da27-4977-873b-f6032d0ac4ae",
+            "colId": "348e8f5c-f546-4965-9726-7bf412772cbc",
+            "containerId": "676f090f-eeda-4369-b275-12cb0f3c9fdf",
+            "name": "test",
+            "url": "additionals/test",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-08T20:39:50.845Z",
+            "modified": "2024-04-08T20:40:38.470Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ebab727f-9316-406c-951c-ecfd40ab7927",
+            "colId": "348e8f5c-f546-4965-9726-7bf412772cbc",
+            "containerId": "676f090f-eeda-4369-b275-12cb0f3c9fdf",
+            "name": "add",
+            "url": "additionals/add",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-08T20:46:57.939Z",
+            "modified": "2024-04-08T20:47:28.877Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "salon de eventos"
+                    },
+                    {
+                        "name": "price",
+                        "value": "15000"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "bcf72caa-41c2-44f3-8fd4-ed50786cd0d6",
+            "colId": "348e8f5c-f546-4965-9726-7bf412772cbc",
+            "containerId": "676f090f-eeda-4369-b275-12cb0f3c9fdf",
+            "name": "update",
+            "url": "additionals/update/661457e039977bdb3196f7e4",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-04-08T20:50:31.039Z",
+            "modified": "2024-04-08T20:52:22.038Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "salón de eventos"
+                    },
+                    {
+                        "name": "price",
+                        "value": "1500"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "15d03517-1ed3-4c7f-8c4b-8679eb16fd0b",
+            "colId": "348e8f5c-f546-4965-9726-7bf412772cbc",
+            "containerId": "676f090f-eeda-4369-b275-12cb0f3c9fdf",
+            "name": "find",
+            "url": "additionals/find",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-08T22:22:10.836Z",
+            "modified": "2024-04-08T22:22:19.695Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f33749b0-be99-4cd0-ad30-34b5c985f6d0",
+            "colId": "348e8f5c-f546-4965-9726-7bf412772cbc",
+            "containerId": "676f090f-eeda-4369-b275-12cb0f3c9fdf",
+            "name": "delete",
+            "url": "additionals/delete/661457e039977bdb3196f7e4",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-04-08T22:22:35.246Z",
+            "modified": "2024-04-08T22:23:10.652Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9ada0e9e-5269-42e3-99f4-58b22b704849",
+            "colId": "348e8f5c-f546-4965-9726-7bf412772cbc",
+            "containerId": "60bb3ec0-44e2-4b41-8412-b309ac92f3fd",
+            "name": "test",
+            "url": "event/test",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-04-08T22:35:43.316Z",
+            "modified": "2024-04-08T22:35:54.429Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "98738c34-2267-46aa-a496-e9f677cb15ec",
+            "colId": "348e8f5c-f546-4965-9726-7bf412772cbc",
+            "containerId": "60bb3ec0-44e2-4b41-8412-b309ac92f3fd",
+            "name": "add",
+            "url": "event/add",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-04-08T22:40:43.937Z",
+            "modified": "2024-04-08T22:50:11.586Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "evento social dfgh"
+                    },
+                    {
+                        "name": "date",
+                        "value": "2024-01-03"
+                    },
+                    {
+                        "name": "time",
+                        "value": "13:00:00"
+                    },
+                    {
+                        "name": "additional",
+                        "value": "66146e5672756ac353caf213"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4d9bd21-30e3-429b-aa0f-a55843cdb78a",
+            "colId": "348e8f5c-f546-4965-9726-7bf412772cbc",
+            "containerId": "60bb3ec0-44e2-4b41-8412-b309ac92f3fd",
+            "name": "update",
+            "url": "event/update/661474a3389e572b15dcf776",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-04-08T23:51:42.943Z",
+            "modified": "2024-04-08T23:52:26.078Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "zoho"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "937610e8-11cc-48d8-a86a-494268fec966",
+            "colId": "348e8f5c-f546-4965-9726-7bf412772cbc",
+            "containerId": "60bb3ec0-44e2-4b41-8412-b309ac92f3fd",
+            "name": "find",
+            "url": "event/find",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-04-08T23:56:03.130Z",
+            "modified": "2024-04-08T23:56:31.820Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3232e6d4-5d5c-4ac5-9c1c-c176c98d9efe",
+            "colId": "348e8f5c-f546-4965-9726-7bf412772cbc",
+            "containerId": "60bb3ec0-44e2-4b41-8412-b309ac92f3fd",
+            "name": "delete",
+            "url": "event/delete/661474a3389e572b15dcf776",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-04-09T00:00:46.249Z",
+            "modified": "2024-04-09T00:01:06.279Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656/"
+        }
+    }
+}
