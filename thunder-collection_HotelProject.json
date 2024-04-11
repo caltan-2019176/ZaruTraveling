@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "HotelProject",
-    "dateExported": "2024-04-09T00:02:14.270Z",
+    "dateExported": "2024-04-11T02:08:47.215Z",
     "version": "1.1",
     "folders": [
         {
@@ -17,6 +17,13 @@
             "containerId": "",
             "created": "2024-04-08T22:33:53.874Z",
             "sortNum": 20000
+        },
+        {
+            "_id": "cb22da08-bca6-4679-bd9f-f0b54919a0bd",
+            "name": "reservation",
+            "containerId": "",
+            "created": "2024-04-11T02:02:16.239Z",
+            "sortNum": 30000
         }
     ],
     "requests": [
@@ -141,8 +148,13 @@
             "method": "POST",
             "sortNum": 70000,
             "created": "2024-04-08T22:40:43.937Z",
-            "modified": "2024-04-08T22:50:11.586Z",
-            "headers": [],
+            "modified": "2024-04-09T00:44:40.294Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE0OGQ5NjVlMTkyNDBiZTc1YjI3OGEiLCJ1c2VybmFtZSI6ImNhbHRhbiIsIm5hbWVVc2VyIjoiQ2FybG9zIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzEyNjIzNDIwLCJleHAiOjE3MTI2MzQyMjB9.RBn_PglyHACZU9cfNx_nuWDipI29X4JWDvuNWapFdD4"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "formencoded",
@@ -177,8 +189,13 @@
             "method": "PUT",
             "sortNum": 80000,
             "created": "2024-04-08T23:51:42.943Z",
-            "modified": "2024-04-08T23:52:26.078Z",
-            "headers": [],
+            "modified": "2024-04-09T00:45:26.728Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE0OGQ5NjVlMTkyNDBiZTc1YjI3OGEiLCJ1c2VybmFtZSI6ImNhbHRhbiIsIm5hbWVVc2VyIjoiQ2FybG9zIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzEyNjIzNDIwLCJleHAiOjE3MTI2MzQyMjB9.RBn_PglyHACZU9cfNx_nuWDipI29X4JWDvuNWapFdD4"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "formencoded",
@@ -216,6 +233,20 @@
             "sortNum": 100000,
             "created": "2024-04-09T00:00:46.249Z",
             "modified": "2024-04-09T00:01:06.279Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9e0d7df8-b613-4df2-91bb-60d691530d34",
+            "colId": "348e8f5c-f546-4965-9726-7bf412772cbc",
+            "containerId": "cb22da08-bca6-4679-bd9f-f0b54919a0bd",
+            "name": "add",
+            "url": "reservation/test",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-04-11T02:02:31.130Z",
+            "modified": "2024-04-11T02:04:12.956Z",
             "headers": [],
             "params": [],
             "tests": []
